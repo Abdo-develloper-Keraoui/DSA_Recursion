@@ -1,3 +1,4 @@
+//calculate x to the power of n
 #include <stdio.h>
 #include <stdlib.h>
 
