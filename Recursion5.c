@@ -58,3 +58,17 @@ int Recherche_recu(int* Tab, int n, int X)
                                                 return Recherche_recu(Tab, n-1,X);
                 }
 }
+
+int main()
+{
+                int T[] = {0,1,2,3,4,5,6,7,8,9};
+                int n = 10, X =5, flag;
+                flag = Recherche_iter1(T,n,X);
+                //flag = Recherche_iter2(T,n,X);
+                //flag = Recherche_recu(T,n-1,X);
+                if(flag == 0)
+                                printf("The element %d is not in the Array.\n", X);
+                else if (flag == 1)
+                                printf("The element %d is in the Array.\n",X);
+                                
+}
